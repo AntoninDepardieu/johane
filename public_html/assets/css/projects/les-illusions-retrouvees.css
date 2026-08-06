@@ -1,0 +1,118 @@
+.les-illusions-retrouvees section.video-title {
+    display: flex;
+    position: relative;
+    height: -moz-fit-content;
+    height: fit-content;
+    z-index: 2;
+    margin-top: 100px;
+    margin-bottom: 90px;
+}
+
+.les-illusions-retrouvees .item-wrapper h1 {
+    font-size: 50px;
+}
+
+.les-illusions-retrouvees .item-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: -moz-fit-content;
+    height: fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin-inline: auto;
+    justify-content: center;
+    margin-top: auto;
+    width: 100%;
+}
+
+.les-illusions-retrouvees .cell-wrapper {
+    display: flex;
+    width: -moz-fit-content;
+    width: fit-content;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    width: 100%;
+    aspect-ratio: 16/9;
+}
+
+.les-illusions-retrouvees .cell-wrapper video {
+    width: 100%;
+    margin: auto;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+.les-illusions-retrouvees section.developement {
+    display: flex;
+    z-index: 1;
+    margin-bottom: 90px;
+    /* border: 1px solid red; */
+}
+
+.les-illusions-retrouvees .object-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    min-height: 700px;
+    max-width: 1200px;
+
+
+}
+
+.developement p {
+    text-align: center;
+    width: 60%;
+    margin: auto;
+}
+
+.animated-storyboard {
+    width: 100%;
+    height: -moz-fit-content;
+    height: fit-content;
+}
+
+.animated-storyboard .grid-wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    height: 100%;
+    width: 100%;
+    margin-bottom: 90px;
+
+}
+
+.animated-storyboard .grid-wrapper>* {
+    display: flex;
+    flex: 1 1;
+    height: 100%;
+    width: 100%;
+    -o-object-fit: contain;
+    object-fit: contain;
+
+}
+
+@media (max-width:767px) {
+    .les-illusions-retrouvees .title-wrapper {
+        text-align: center;
+        margin-inline: auto;
+    }
+
+    .les-illusions-retrouvees .cell-wrapper {
+        border-radius: var(--border-radius);
+    }
+
+    .developement p {
+        text-align: center;
+        width: auto;
+        margin-inline: 30px;
+    }
+
+    .animated-storyboard .grid-wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}

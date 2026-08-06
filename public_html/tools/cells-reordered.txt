@@ -1,0 +1,173 @@
+<div class="grid-wrapper">
+    <div class="cell-wrapper motion" style="aspect-ratio:16/9">
+            <a href="la-louve.php" class="full-link"></a>
+            <video preload="metadata" muted autoplay loop playsinline title="La Louve">
+                <source src="assets/projects/la-louve/cover.mp4" type="video/mp4">
+            </video>
+        </div>
+
+    <div class="cell-wrapper graphisme">
+            <a href="" class="full-link"></a>
+            <img src="assets/projects/andros-foodtruck/cover.webp" alt="">
+        </div>
+
+    <div class="cell-wrapper motion" style="aspect-ratio:9/16">
+            <video preload="metadata" muted autoplay loop playsinline title="3D - Jouviance">
+                <source src="assets/projects/jouviance-fooh/cover.mp4" type="video/mp4">
+            </video>
+        </div>
+
+    <div class="cell-wrapper graphisme">
+            <a href="" class="full-link"></a>
+            <img style="object-fit:cover" src="photos/miniatures/cashflow-positif.webp" alt="">
+        </div>
+
+    <div class="cell-wrapper motion" style="aspect-ratio:16/9">
+            <a href="" class="full-link"></a>
+            <img src="assets/projects/manette-ps5/cover.gif" alt="">
+        </div>
+
+    <div class="cell-wrapper graphisme">
+            <a href="" class="full-link"></a>
+            <img style="object-fit:contain; aspect-ratio: 15/9" src="photos/miniatures/photorescapes.webp" alt="">
+        </div>
+
+    <div class="cell-wrapper motion" style="aspect-ratio:16/9">
+            <video preload="metadata" muted autoplay loop playsinline title="3D - Jouviance">
+                <source src="assets/projects/jouviance/cover.mp4" type="video/mp4">
+            </video>
+        </div>
+
+    <div class="cell-wrapper motion blanc" style="aspect-ratio:16/9">
+            <img src="assets/projects/logo-4padel/cover.gif" alt="">
+        </div>
+
+    <div class="cell-wrapper graphisme">
+            <a href="" class="full-link"></a>
+            <img src="photos/miniatures/nzy.webp" alt="">
+        </div>
+
+    <div class="cell-wrapper motion" style="aspect-ratio:16/9">
+            <img src="assets/projects/festival-de-leau/cover.gif" alt="">
+        </div>
+
+    <div class="cell-wrapper graphisme">
+            <a href="" class="full-link"></a>
+            <img style="object-fit:cover" src="photos/miniatures/fontissime.webp" alt="">
+        </div>
+
+    <div class="cell-wrapper motion" style="aspect-ratio:16/9">
+            <a href="" class="full-link"></a>
+            <img src="assets/projects/french-fab/cover.gif" alt="">
+        </div>
+
+    <div class="cell-wrapper graphisme">
+            <a href="" class="full-link"></a>
+            <img src="photos/miniatures/la-louve.webp" alt="">
+        </div>
+
+    <div class="cell-wrapper motion" style="aspect-ratio:16/9">
+            <a href="zomb.php" class="full-link"></a>
+            <video preload="metadata" muted autoplay loop playsinline title="Zomb'">
+                <source src="assets/projects/zomb/cover.mp4" type="video/mp4">
+            </video>
+        </div>
+
+    <div class="cell-wrapper graphisme">
+            <a href="" class="full-link"></a>
+            <img style="object-fit:cover" src="photos/miniatures/festival-de-l-eau.webp" alt="">
+        </div>
+
+    <div class="cell-wrapper motion" style="aspect-ratio:16/9">
+            <img src="assets/projects/stop-motion/cover.gif" alt="">
+        </div>
+
+    <div class="cell-wrapper motion blanc" style="aspect-ratio:1/1">
+            <video preload="metadata" muted autoplay loop playsinline title="Logo Mayuri Paris">
+                <source src="assets/projects/logo-mayuri/cover.mp4" type="video/mp4">
+            </video>
+        </div>
+
+    <div class="cell-wrapper graphisme blanc">
+            <a href="" class="full-link"></a>
+            <img src="assets/projects/jem/cover.webp" alt="">
+        </div>
+
+    <div class="cell-wrapper motion blanc" style="aspect-ratio:16/9">
+            <a href="rue-de-lappe.php" class="full-link"></a>
+            <video preload="metadata" muted autoplay loop playsinline title="Data design - le Rue de Lappe">
+                <source src="assets/projects/rue-de-lappe/cover.mp4" type="video/mp4">
+            </video>
+        </div>
+
+    <div class="cell-wrapper graphisme">
+            <a href="" class="full-link"></a>
+            <img src="photos/miniatures/pinterest.webp" alt="">
+        </div>
+
+    <div class="cell-wrapper motion" style="aspect-ratio:16/9">
+            <a href="" class="full-link"></a>
+            <video preload="metadata" muted autoplay loop playsinline title="Logo Mayuri Paris">
+                <source src="assets/projects/tortues-marines/cover.mp4" type="video/mp4">
+            </video>
+        </div>
+
+    <div class="cell-wrapper graphisme">
+            <a href="" class="full-link"></a>
+            <img style="object-fit:cover" src="photos/miniatures/tour-eiffel.webp" alt="">
+        </div>
+
+    <div class="cell-wrapper motion" style="aspect-ratio:9/16">
+            <video preload="metadata" muted autoplay loop playsinline title="4Padel">
+                <source src="assets/projects/lionel-4padel/cover.mp4" type="video/mp4">
+            </video>
+        </div>
+
+    <div class="cell-wrapper motion blanc" style="aspect-ratio:1/1">
+            <img src="assets/projects/olympiade-culturelle/cover.gif" alt="">
+        </div>
+
+    <div class="cell-wrapper graphisme blanc">
+            <a href="" class="full-link"></a>
+            <img style="object-fit:cover" src="photos/miniatures/chabe.webp" alt="">
+        </div>
+
+    <div class="cell-wrapper motion blanc" style="aspect-ratio:16/9">
+            <a href="climaventure.php" class="full-link"></a>
+            <video preload="metadata" muted autoplay loop playsinline title="Climaventure">
+                <source src="assets/projects/climaventure/cover.mp4" type="video/mp4">
+            </video>
+        </div>
+
+    <div class="cell-wrapper graphisme">
+            <a href="" class="full-link"></a>
+            <img style="object-fit:cover" src="photos/miniatures/kb-cosmetique.webp" alt="">
+        </div>
+
+    <div class="cell-wrapper motion blanc" style="aspect-ratio:16/9">
+            <a href="" class="full-link"></a>
+            <img src="assets/projects/idp-sante/cover.gif" alt="">
+        </div>
+
+    <div class="cell-wrapper graphisme">
+            <a href="" class="full-link"></a>
+            <img src="photos/miniatures/miniature-les-fruits-magiques.webp" alt="">
+        </div>
+
+    <div class="cell-wrapper motion blanc" style="aspect-ratio:16/9">
+            <a href="les-illusions-retrouvees.php" class="full-link"></a>
+            <video preload="metadata" muted autoplay loop playsinline title="les-illusions-retrouvees'">
+                <source src="assets/projects/les-illusions-retrouvees/cover.mp4" type="video/mp4">
+            </video>
+        </div>
+
+    <div class="cell-wrapper motion" style="aspect-ratio:1/1">
+            <img src="assets/projects/les-fruits-magiques/cover.gif" alt="">
+        </div>
+
+    <div class="cell-wrapper showreel" style="display: none;">
+            <video controls poster="photos/poster_showreel.webp" class="blanc">
+                <source src="assets/video/2026-showreel.mp4" type="video/mp4">
+            </video>
+        </div>
+</div>

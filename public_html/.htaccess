@@ -1,0 +1,63 @@
+# Activer la réécriture d'URL
+RewriteEngine On
+RewriteBase /
+
+# Redirections 301 pour rendre les URLs propres
+RewriteCond %{THE_REQUEST} /index\.php [NC]
+RewriteRule ^index\.php$ home [R=301,L]
+
+RewriteCond %{THE_REQUEST} /showreel\.php [NC]
+RewriteRule ^showreel\.php$ showreel [R=301,L]
+
+RewriteCond %{THE_REQUEST} /about\.php [NC]
+RewriteRule ^about\.php$ about [R=301,L]
+
+RewriteCond %{THE_REQUEST} /book\.php [NC]
+RewriteRule ^book\.php$ book [R=301,L]
+
+
+RewriteCond %{THE_REQUEST} /le-poinconneur-des-lilas\.php [NC]
+RewriteRule ^le-poinconneur-des-lilas\.php$ le-poinconneur-des-lilas [R=301,L]
+
+RewriteCond %{THE_REQUEST} /zomb\.php [NC]
+RewriteRule ^zomb\.php$ zomb [R=301,L]
+
+RewriteCond %{THE_REQUEST} /rue-de-lappe\.php [NC]
+RewriteRule ^rue-de-lappe\.php$ rue-de-lappe [R=301,L]
+
+RewriteCond %{THE_REQUEST} /climaventure\.php [NC]
+RewriteRule ^climaventure\.php$ climaventure [R=301,L]
+
+RewriteCond %{THE_REQUEST} /la-louve\.php [NC]
+RewriteRule ^la-louve\.php$ la-louve [R=301,L]
+
+# Réécritures internes : quand quelqu'un demande /home → servir le bon fichier
+RewriteRule ^home$ index.php [L]
+RewriteRule ^showreel$ showreel.php [L]
+RewriteRule ^about$ about.php [L]
+RewriteRule ^book$ book.php [L]
+
+RewriteRule ^zomb$ zomb.php [L]
+RewriteRule ^la-louve$ la-louve.php [L]
+RewriteRule ^le-poinconneur-des-lilas$ le-poinconneur-des-lilas.php [L]
+RewriteRule ^climaventure$ climaventure.php [L]
+RewriteRule ^rue-de-lappe$ rue-de-lappe.php [L]
+
+# Désactiver le cache pour PHP et HTML (toujours version la plus récente)
+<FilesMatch "\.(html|php)$">
+  Header always set Cache-Control "no-cache, no-store, must-revalidate"
+  Header always set Pragma "no-cache"
+  Header always set Expires "0"
+</FilesMatch>
+
+# Autoriser un cache court (1h) pour CSS et JS, avec revalidation
+<FilesMatch "\.(css|js)$">
+  Header always set Cache-Control "max-age=3600, must-revalidate"
+</FilesMatch>
+
+# Activer CORS pour les images (PNG, JPG, WebP, SVG)
+<IfModule mod_headers.c>
+  <FilesMatch "\.(png|jpe?g|gif|webp|svg)$">
+    Header set Access-Control-Allow-Origin "*"
+  </FilesMatch>
+</IfModule>

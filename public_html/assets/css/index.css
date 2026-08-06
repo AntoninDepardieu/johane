@@ -1,0 +1,488 @@
+/* =========================================================
+   POLICES
+========================================================= */
+
+@font-face {
+    font-family: "AdobeHandwriting-Ernie";
+    src: url("/assets/fonts/AdobeHandwriting-Ernie.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "AlteHaasGroteskRegular";
+    src: url("/assets/fonts/AlteHaasGroteskRegular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "AlteHaasGroteskBold";
+    src: url("/assets/fonts/AlteHaasGroteskBold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+/* =========================================================
+   VARIABLES
+========================================================= */
+
+:root {
+    --marge-horizontale: 30px;
+    --espace-categories: 12px;
+
+    --noir: #171717;
+    --blanc: #f8f8f4;
+    --gris: #b7b7b2;
+
+    /* Couleurs de secours si une image ne charge pas */
+    --jaune: #eee58f;
+    --bleu: #cbdde3;
+    --violet: #d3bad5;
+    --beige: #daceab;
+    --vert: #cee59a;
+    --rose: #dfbab9;
+}
+
+
+/* =========================================================
+   RESET
+========================================================= */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-width: 320px;
+    min-height: 100vh;
+    min-height: 100svh;
+
+    color: var(--noir);
+    background: var(--blanc);
+
+    font-family: "AlteHaasGroteskRegular", Arial, sans-serif;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+
+/* =========================================================
+   STRUCTURE GÉNÉRALE
+========================================================= */
+
+.home {
+    display: grid;
+    grid-template-rows: auto minmax(0, 1fr) 58px;
+
+    width: 100%;
+    min-height: 100vh;
+    min-height: 100svh;
+
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   CARTELS
+========================================================= */
+
+.categories {
+    display: grid;
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    align-items: start;
+    gap: var(--espace-categories);
+
+    padding: 28px var(--marge-horizontale) 0;
+}
+
+.category {
+    display: flex;
+    flex-direction: column;
+
+    min-width: 0;
+}
+
+.category__color {
+    width: 100%;
+    height: auto;
+
+    overflow: hidden;
+    background: var(--category-color);
+
+    transition:
+        transform 250ms ease,
+        filter 250ms ease;
+}
+
+.category__color img {
+    display: block;
+
+    width: 100%;
+    height: auto;
+
+    object-fit: initial;
+
+    transition: transform 350ms ease;
+}
+
+.category__name {
+    display: block;
+
+    margin-top: 7px;
+
+    font-family: "AlteHaasGroteskBold", Arial, sans-serif;
+    font-size: clamp(13px, 1.35vw, 22px);
+    line-height: 1;
+    white-space: nowrap;
+}
+
+
+/* Hover conservé */
+
+.category:hover .category__color {
+    transform: translateY(-5px);
+    filter: brightness(0.92);
+}
+
+.category:hover .category__color img {
+    transform: scale(1.025);
+}
+
+
+/* =========================================================
+   FORMES DES CARTELS
+========================================================= */
+
+.category--branding {
+    --category-color: var(--jaune);
+}
+
+.category--editorial {
+    --category-color: var(--bleu);
+}
+
+.category--digital {
+    --category-color: var(--violet);
+}
+
+.category--motion {
+    --category-color: var(--beige);
+}
+
+.category--illustration {
+    --category-color: var(--vert);
+}
+
+.category--product {
+    --category-color: var(--rose);
+}
+
+
+/* =========================================================
+   TITRE PRINCIPAL
+========================================================= */
+
+.hero {
+    display: flex;
+    align-items: flex-end;
+
+    min-height: 0;
+
+    padding:
+        0 var(--marge-horizontale) 10px;
+}
+
+.hero__content {
+    position: relative;
+
+    width: min(78vw, 980px);
+
+    margin: 0 auto;
+}
+
+
+/* Johane Mannix */
+
+.hero__signature {
+    position: absolute;
+    z-index: 2;
+
+    bottom: calc(100% - 10px);
+    left: -2vw;
+
+    margin: 0;
+
+    font-family: "AdobeHandwriting-Ernie", cursive;
+    font-size: clamp(38px, 3vw, 62px);
+    font-weight: 400;
+    line-height: 1;
+    white-space: nowrap;
+
+    transform-origin: left bottom;
+}
+
+
+/* Graphic Designer */
+
+.hero__title {
+    display: flex;
+    align-items: baseline;
+
+    margin: 0 0 0 5vw;
+
+    font-size: clamp(72px, 7.8vw, 125px);
+    font-weight: 400;
+    line-height: 0.82;
+    letter-spacing: -0.065em;
+    white-space: nowrap;
+}
+
+.hero__title-bold {
+    font-family: "AlteHaasGroteskBold", Arial, sans-serif;
+    font-weight: 700;
+}
+
+.hero__title-regular {
+    font-family: "AlteHaasGroteskRegular", Arial, sans-serif;
+    font-weight: 400;
+    letter-spacing: -0.075em;
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    gap: 30px;
+
+    min-height: 58px;
+
+    padding: 0 var(--marge-horizontale);
+
+    border-top: 1px solid var(--gris);
+    border-bottom: 1px solid var(--gris);
+
+    font-family: "AlteHaasGroteskBold", Arial, sans-serif;
+    font-size: clamp(10px, 0.85vw, 14px);
+    text-transform: uppercase;
+}
+
+.footer__status {
+    padding-left: clamp(30px, 8vw, 130px);
+}
+
+.footer__navigation {
+    display: flex;
+    align-items: center;
+    gap: clamp(22px, 3.5vw, 60px);
+}
+
+.footer__navigation a {
+    position: relative;
+
+    padding: 20px 0;
+}
+
+.footer__navigation a::after {
+    position: absolute;
+    right: 0;
+    bottom: 14px;
+    left: 0;
+
+    height: 1px;
+
+    background: currentColor;
+
+    content: "";
+
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 200ms ease;
+}
+
+.footer__navigation a:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+    :root {
+        --marge-horizontale: 18px;
+    }
+
+    .home {
+        grid-template-rows: auto minmax(0, 1fr) auto;
+
+        min-height: 100svh;
+
+        overflow: visible;
+    }
+
+
+    /* Cartels horizontaux */
+
+    .categories {
+        display: flex;
+        align-items: flex-start;
+        gap: 14px;
+
+        padding: 20px 18px 24px;
+
+        overflow-x: auto;
+        scroll-padding-inline: 18px;
+        scrollbar-width: none;
+    }
+
+    .categories::-webkit-scrollbar {
+        display: none;
+    }
+
+    .category {
+        flex: 0 0 78vw;
+        min-width: 240px;
+        max-width: 290px;
+    }
+
+    .category__color,
+    .category--branding .category__color,
+    .category--editorial .category__color,
+    .category--digital .category__color,
+    .category--motion .category__color,
+    .category--illustration .category__color,
+    .category--product .category__color {
+        width: 100%;
+        height: auto !important;
+
+        overflow: hidden;
+        background: transparent;
+        line-height: 0;
+    }
+
+    .category__color img {
+        display: block;
+
+        width: 100%;
+        height: auto !important;
+    }
+
+    .category__name {
+        margin-top: 8px;
+
+        font-size: 14px;
+        line-height: 1;
+    }
+
+
+    /* Titre */
+
+    .hero {
+        align-items: flex-end;
+
+        min-height: 0;
+
+        padding:
+            70px var(--marge-horizontale) 24px;
+    }
+
+    .hero__content {
+        width: 100%;
+        max-width: none;
+
+        margin: 0;
+    }
+
+    .hero__signature {
+        position: relative;
+
+        bottom: auto;
+        left: auto;
+
+        margin: 0 0 16px 5px;
+
+        font-size: clamp(39px, 11.5vw, 52px);
+        line-height: 0.8;
+        white-space: nowrap;
+    }
+
+    .hero__title {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        width: 100%;
+
+        margin: 0;
+
+        font-size: clamp(62px, 18vw, 82px);
+        line-height: 0.7;
+        letter-spacing: -4px;
+        white-space: normal;
+    }
+
+    .hero__title-regular {
+        margin-left: 0;
+        letter-spacing: -5px;
+    }
+
+
+    /* Footer avec espace en bas */
+
+    .footer {
+        grid-template-columns: 1fr;
+        gap: 6px;
+
+        padding:
+            12px var(--marge-horizontale) calc(24px + env(safe-area-inset-bottom));
+
+        border-bottom: none;
+
+        font-size: 11px;
+    }
+
+    .footer__status {
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .footer__navigation {
+        justify-content: space-between;
+        gap: 8px;
+    }
+
+    .footer__navigation a {
+        padding: 8px 0 0;
+        font-size: 11px;
+    }
+
+    .footer__navigation a::after {
+        bottom: -3px;
+    }
+}
