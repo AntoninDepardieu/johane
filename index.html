@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <div class="gain" >
+            <video style="border:10px solid black" src="ASSETS/LAYOUT/VIDEO.mp4" controls></video>
+        </div>
+        <div class="onboarding" style="display: flex;">
+            <div class="text">
+                <h1 id="text-0" class="actif">Play</h1>
+                <h1 id="text-1">Oh tu es là toi ?</h1>
+                <h1 id="text-2">Joyeux deux ans avec moi ! ❤️ <br> on fais déjà une très belle équipe mais tu vas voir,
+                    ce n'est que le début d'une grande aventure 🥷🏻 </h1>
+                <h1 id="text-3">J'ai un petit message pour toi, trouve le code pour ouvrir le coffre 😎</h1>
+            </div>
+            <img src="ASSETS/LAYOUT/PHOTO1.png" alt="">
+            <div id="button">
+                <img id="turn" src="ASSETS/LAYOUT/FLECHE.svg" alt="">
+            </div>
+        </div>
+        <div class="overlay" style="display:  ;">
+            <div class="TREE-D" id="left"></div>
+            <div class="TREE-D" id="right"></div>
+            <div class="text">
+                <h1>Bonjour 🤣</h1>
+            </div>
+            <img src="ASSETS/FOCUS/OURSON.png" alt="">
+            <div id="button">
+                <img id="turn" src="ASSETS/LAYOUT/TURN.svg" alt="">
+            </div>
+            <div id="input">
+                <input type="text">
+            </div>
+            <img id="PHOTO" src="" alt="">
+            <div class="object-wrapper" style="rotate: 32deg">
+                <img class="object PHOTO" id="CINEMA" src="ASSETS/SCENE/CINEMA.png" alt="">
+                <p style="display: none;">C'était trop bien ❤️</p>
+            </div>
+        </div>
+
+        <img id="CACHE_TIRROIR" src="ASSETS/SCENE/CACHE_TIRROIR.png" alt="">
+        <img id="CACHE_CAVEAU" src="ASSETS/SCENE/CACHE_CAVEAU.png" alt="">
+        <img id="CACHE_COSTUME" src="ASSETS/SCENE/CACHE_COSTUME.png" alt="">
+        <img id="CACHE_COFFRE" src="ASSETS/SCENE/CACHE_COFFRE.png" alt="">
+        <img id="FENETRE" src="ASSETS/SCENE/FENETRE.gif" alt="">
+        <img id="PATES" src="ASSETS/SCENE/PATES.gif" alt="">
+
+        <div class="object-wrapper">
+            <img class="object PHOTO" id="CAVEAU" src="ASSETS/SCENE/CAVEAU.png" alt="">
+            <p style="display: none;">Notre première rencontre 💃🏻</p>
+        </div>
+        <div class="object-wrapper">
+            <img class="object" id="TIRROIR" src="ASSETS/SCENE/TIRROIR.png" alt="">
+        </div>
+        <div class="hitbox object" id="CAVEAU"></div>
+
+        <img id="ALL" src="ASSETS/SCENE/ALL.png" alt="">
+        <div class="object-wrapper">
+            <img class="object" id="BASKETBALL" src="ASSETS/SCENE/BASKETBALL.png" alt="">
+            <p style="display: none;">CHT ! HE ! Pas touche ! <br> On remet ça samedi prochain ! 🏀</p>
+        </div>
+        <div class="object-wrapper">
+            <img class="object" id="OURSON" src="ASSETS/SCENE/OURSON.png" alt="">
+            <div class="hitbox object" id="OURS"></div>
+            <p style="display: none;">Ma dernière chance ❤️‍🩹</p>
+        </div>
+        <div class="object-wrapper">
+            <img class="object" id="COSTUME" src="ASSETS/SCENE/COSTUME.png" alt="">
+            <p style="display: none;">Le meilleur duo 😎 </p>
+        </div>
+        <div class="object-wrapper">
+            <img class="object" id="WII" src="ASSETS/SCENE/WII.png" alt="">
+            <p style="display: none;">Une petite partie de Mario Bros ? 🤪 </p>
+        </div>
+        <div class="object-wrapper">
+            <img class="object enable" id="COFFRE" src="ASSETS/SCENE/COFFRE.png" alt="">
+            <p style="display: none;">Qu'est-ce que renferme <br> ce MACHIN LÀ ? 🕵🏻‍♀️ </p>
+        </div>
+        <div class="object-wrapper">
+            <img class="object" id="GUITARE" src="ASSETS/SCENE/GUITARE.png" alt="">
+            <p style="display: none;">Je te joue une sérénade ? 🎸 </p>
+        </div>
+        <img class="object" id="SHIRT" src="ASSETS/SCENE/SHIRT.png" alt="">
+
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>
