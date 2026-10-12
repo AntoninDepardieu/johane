@@ -243,6 +243,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     document.querySelector(".gain").style.opacity = "1"
                     const COFFRE_SIC = new Audio("ASSETS/LAYOUT/COFFRE.mp3")
                     COFFRE_SIC.play()
+                    music.pause()
                     video.play()
                 }, 1000)
 
